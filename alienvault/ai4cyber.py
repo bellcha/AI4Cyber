@@ -11,10 +11,12 @@ api_key = config["API"]["KEY"]
 
 otx = OTXv2(api_key)
 
-pulses = otx.getall()
+pulses = otx.search_pulses('bank')
 
-df = pd.read_json(pulses)
+df = pd.DataFrame(pulses['results'])
 
-df.to_csv('alienvault.csv')
+df.to_csv('alienvault_banking.csv')
+
+print(df.head())
 
 
