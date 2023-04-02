@@ -2,7 +2,7 @@ from OTXv2 import OTXv2, IndicatorTypes
 from pathlib import Path
 import configparser
 from datetime import datetime as dt
-import json
+import pandas as pd
 
 
 config = configparser.ConfigParser()
@@ -11,8 +11,10 @@ api_key = config["API"]["KEY"]
 
 otx = OTXv2(api_key)
 
-#pulses = otx.getall(modified_since=dt.today(),limit=5)
+pulses = otx.getall()
 
-events = json.dumps(otx.get_pulse_details("642314b3404fb7682ccd09aa"), indent=4)
+df = pd.read_json(pulses)
 
-print(events)
+df.to_csv('alienvault.csv')
+
+
