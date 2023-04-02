@@ -6,9 +6,9 @@ import logging.handlers
 import pathlib
 
 from pastepwn import PastePwn
-from pastepwn.actions import TelegramAction
+from pastepwn.actions import LogAction
 from pastepwn.analyzers import MailAnalyzer, WordAnalyzer
-from pastepwn.database import MongoDB
+from pastepwn.database import SQLiteDB
 
 # Setting up the logging to a file in ./logs/
 logdir_path = pathlib.Path(__file__).parent.joinpath("logs").absolute()
@@ -24,17 +24,19 @@ logger = logging.getLogger(__name__)
 logging.basicConfig(format="%(asctime)s - %(name)s - %(levelname)s - %(message)s", level=logging.INFO, handlers=[logfile_handler, logging.StreamHandler()])
 
 # Framework code
-database = MongoDB(ip="192.168.240.128")
+database = SQLiteDB()
 
 pastepwn = PastePwn(database)
 
 # Generic action to send Telegram messages on new matched pastes
 #telegram_action = TelegramAction(token="token", receiver="-1001348376474")
 
-#mail_analyzer = MailAnalyzer(telegram_action)
-premium_analyzer = WordAnalyzer(telegram_action, "premium")
+log_action = LogAction()
 
-pastepwn.add_analyzer(mail_analyzer)
+#mail_analyzer = MailAnalyzer(log_action)
+premium_analyzer = WordAnalyzer(actions = log_action, words="python")
+
+#pastepwn.add_analyzer(mail_analyzer)
 pastepwn.add_analyzer(premium_analyzer)
 
 pastepwn.start()

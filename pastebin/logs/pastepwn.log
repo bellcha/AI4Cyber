@@ -1,0 +1,76 @@
+2023-04-01 12:33:24,333 - pastepwn.util.request - INFO - Using the following custom proxies: None
+2023-04-01 12:33:24,502 - pastepwn.util.request - INFO - Using the following system proxies: {}
+2023-04-01 12:33:24,980 - pastepwn.core.pastepwn - INFO - Your public IP is 198.28.184.153
+2023-04-01 12:33:24,981 - pastepwn.core.pastepwn - INFO - Database provided! Storing pastes in there.
+2023-04-01 12:34:30,753 - pastepwn.util.request - INFO - Using the following custom proxies: None
+2023-04-01 12:34:30,757 - pastepwn.util.request - INFO - Using the following system proxies: {}
+2023-04-01 12:34:31,034 - pastepwn.core.pastepwn - INFO - Your public IP is 198.28.184.153
+2023-04-01 12:34:31,035 - pastepwn.core.pastepwn - INFO - Database provided! Storing pastes in there.
+2023-04-01 12:38:01,822 - pastepwn.util.request - INFO - Using the following custom proxies: None
+2023-04-01 12:38:01,827 - pastepwn.util.request - INFO - Using the following system proxies: {}
+2023-04-01 12:38:02,173 - pastepwn.core.pastepwn - INFO - Your public IP is 198.28.184.153
+2023-04-01 12:38:02,174 - pastepwn.core.pastepwn - INFO - Database provided! Storing pastes in there.
+2023-04-01 12:38:16,609 - pastepwn.util.request - INFO - Using the following custom proxies: None
+2023-04-01 12:38:16,613 - pastepwn.util.request - INFO - Using the following system proxies: {}
+2023-04-01 12:38:16,901 - pastepwn.core.pastepwn - INFO - Your public IP is 198.28.184.153
+2023-04-01 12:38:16,902 - pastepwn.core.pastepwn - INFO - Database provided! Storing pastes in there.
+2023-04-01 12:40:42,594 - pastepwn.util.request - INFO - Using the following custom proxies: None
+2023-04-01 12:40:42,599 - pastepwn.util.request - INFO - Using the following system proxies: {}
+2023-04-01 12:40:42,871 - pastepwn.core.pastepwn - INFO - Your public IP is 198.28.184.153
+2023-04-01 12:40:42,872 - pastepwn.core.pastepwn - INFO - Database provided! Storing pastes in there.
+2023-04-01 12:40:43,144 - pastepwn.scraping.pastebin.pastebinscraper - ERROR - Expecting value: line 1 column 1 (char 0)
+2023-04-01 12:45:26,354 - pastepwn.util.request - INFO - Using the following custom proxies: None
+2023-04-01 12:45:26,358 - pastepwn.util.request - INFO - Using the following system proxies: {}
+2023-04-01 12:45:33,314 - pastepwn.core.pastepwn - INFO - Your public IP is 198.28.184.153
+2023-04-01 12:45:33,315 - pastepwn.core.pastepwn - INFO - Database provided! Storing pastes in there.
+2023-04-01 12:45:33,568 - pastepwn.scraping.pastebin.pastebinscraper - ERROR - Expecting value: line 1 column 1 (char 0)
+2023-04-01 12:46:35,907 - pastepwn.scraping.pastebin.pastebinscraper - ERROR - Expecting value: line 1 column 1 (char 0)
+2023-04-01 12:47:36,396 - pastepwn.scraping.pastebin.pastebinscraper - ERROR - Expecting value: line 1 column 1 (char 0)
+2023-04-01 12:48:38,833 - pastepwn.scraping.pastebin.pastebinscraper - ERROR - Expecting value: line 1 column 1 (char 0)
+2023-04-01 12:54:18,060 - pastepwn.util.request - INFO - Using the following custom proxies: None
+2023-04-01 12:54:18,064 - pastepwn.util.request - INFO - Using the following system proxies: {}
+2023-04-01 12:54:19,990 - pastepwn.core.pastepwn - INFO - Your public IP is 198.28.184.153
+2023-04-01 12:54:19,991 - pastepwn.core.pastepwn - INFO - Database provided! Storing pastes in there.
+2023-04-01 12:54:20,571 - pastepwn.scraping.pastebin.pastebinscraper - ERROR - Expecting value: line 1 column 1 (char 0)
+2023-04-01 12:55:21,018 - pastepwn.scraping.pastebin.pastebinscraper - ERROR - Expecting value: line 1 column 1 (char 0)
+2023-04-01 12:56:21,337 - pastepwn.scraping.pastebin.pastebinscraper - ERROR - Expecting value: line 1 column 1 (char 0)
+2023-04-01 12:57:23,867 - pastepwn.scraping.pastebin.pastebinscraper - ERROR - Expecting value: line 1 column 1 (char 0)
+2023-04-01 12:58:26,206 - pastepwn.scraping.pastebin.pastebinscraper - ERROR - Expecting value: line 1 column 1 (char 0)
+2023-04-01 12:59:20,676 - pastepwn.util.request - INFO - Using the following custom proxies: None
+2023-04-01 12:59:20,680 - pastepwn.util.request - INFO - Using the following system proxies: {}
+2023-04-01 12:59:20,936 - pastepwn.core.pastepwn - INFO - Your public IP is 198.28.184.153
+2023-04-01 12:59:20,937 - pastepwn.core.pastepwn - INFO - Database provided! Storing pastes in there.
+2023-04-01 12:59:21,321 - pastepwn.scraping.pastebin.pastebinscraper - ERROR - Expecting value: line 1 column 1 (char 0)
+2023-04-01 13:11:34,870 - pastepwn.util.request - INFO - Using the following custom proxies: None
+2023-04-01 13:11:34,874 - pastepwn.util.request - INFO - Using the following system proxies: {}
+2023-04-01 13:11:35,264 - pastepwn.core.pastepwn - INFO - Your public IP is 198.28.184.153
+2023-04-01 13:11:35,265 - pastepwn.core.pastepwn - INFO - Database provided! Storing pastes in there.
+2023-04-01 13:11:35,734 - pastepwn.scraping.pastebin.pastebinscraper - ERROR - The IP you use for scraping (198.28.184.153) was not whitelisted. Visit https://pastebin.com/doc_scraping_api to get access!
+2023-04-01 13:11:36,269 - pastepwn.core.pastedispatcher - CRITICAL - stopping due to exception in another thread
+2023-04-01 13:11:36,272 - pastepwn.core.actionhandler - CRITICAL - stopping ActionHandler due to exception in another thread
+2023-04-01 13:32:49,344 - pastepwn.util.request - INFO - Using the following custom proxies: None
+2023-04-01 13:32:49,348 - pastepwn.util.request - INFO - Using the following system proxies: {}
+2023-04-01 13:32:49,678 - pastepwn.core.pastepwn - INFO - Your public IP is 198.28.184.153
+2023-04-01 13:32:49,679 - pastepwn.core.pastepwn - INFO - Database provided! Storing pastes in there.
+2023-04-01 13:32:50,184 - pastepwn.scraping.pastebin.pastebinscraper - ERROR - Expecting value: line 1 column 1 (char 0)
+2023-04-01 13:33:04,490 - pastepwn.util.request - INFO - Using the following custom proxies: None
+2023-04-01 13:33:04,495 - pastepwn.util.request - INFO - Using the following system proxies: {}
+2023-04-01 13:33:04,834 - pastepwn.core.pastepwn - INFO - Your public IP is 198.28.184.153
+2023-04-01 13:33:04,836 - pastepwn.core.pastepwn - INFO - Database provided! Storing pastes in there.
+2023-04-01 13:33:05,240 - pastepwn.scraping.pastebin.pastebinscraper - ERROR - The IP you use for scraping (198.28.184.153) was not whitelisted. Visit https://pastebin.com/doc_scraping_api to get access!
+2023-04-01 13:33:05,842 - pastepwn.core.pastedispatcher - CRITICAL - stopping due to exception in another thread
+2023-04-01 13:33:05,843 - pastepwn.core.actionhandler - CRITICAL - stopping ActionHandler due to exception in another thread
+2023-04-01 13:40:43,163 - pastepwn.util.request - INFO - Using the following custom proxies: None
+2023-04-01 13:40:43,167 - pastepwn.util.request - INFO - Using the following system proxies: {}
+2023-04-01 13:40:43,495 - pastepwn.core.pastepwn - INFO - Your public IP is 198.28.184.153
+2023-04-01 13:40:43,496 - pastepwn.core.pastepwn - INFO - Database provided! Storing pastes in there.
+2023-04-01 13:40:44,193 - pastepwn.scraping.pastebin.pastebinscraper - ERROR - Expecting value: line 1 column 1 (char 0)
+2023-04-01 13:41:44,608 - pastepwn.scraping.pastebin.pastebinscraper - ERROR - Expecting value: line 1 column 1 (char 0)
+2023-04-01 13:42:47,074 - pastepwn.scraping.pastebin.pastebinscraper - ERROR - Expecting value: line 1 column 1 (char 0)
+2023-04-01 13:43:38,367 - pastepwn.util.request - INFO - Using the following custom proxies: None
+2023-04-01 13:43:38,373 - pastepwn.util.request - INFO - Using the following system proxies: {}
+2023-04-01 13:43:38,648 - pastepwn.core.pastepwn - INFO - Your public IP is 198.28.184.153
+2023-04-01 13:43:38,648 - pastepwn.core.pastepwn - INFO - Database provided! Storing pastes in there.
+2023-04-01 13:43:38,891 - pastepwn.scraping.pastebin.pastebinscraper - ERROR - The IP you use for scraping (198.28.184.153) was not whitelisted. Visit https://pastebin.com/doc_scraping_api to get access!
+2023-04-01 13:43:39,654 - pastepwn.core.pastedispatcher - CRITICAL - stopping due to exception in another thread
+2023-04-01 13:43:39,654 - pastepwn.core.actionhandler - CRITICAL - stopping ActionHandler due to exception in another thread
