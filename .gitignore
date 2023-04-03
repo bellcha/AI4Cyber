@@ -1,6 +1,6 @@
 /venv
 /alienvault/config.ini
 /twitter/twitter.ini
-alienvault/.DS_Store
-twitter/tweet_bot.py
+/alienvault/.DS_Store
 /pastebin/logs/pastepwn.log
+/alienvault/__pycache__
