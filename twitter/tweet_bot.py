@@ -11,17 +11,19 @@ bearer_token = config["TWITTER"]["BEARER_TOKEN"]
 
 client = tweepy.Client(bearer_token)
 
-response = client.search_recent_tweets("ransomware", max_results = 100)
+response = client.search_recent_tweets("BlackCat Ransomware", max_results = 100)
 
 tweets = response.data
 
-for t in tweets:
-    print(t.id)
-    print(t.text)
+with open('blackcat_tweets.csv', 'w', encoding='utf-8') as w:
+    w.write('tweet_id,tweet\n')
+    for t in tweets:
+        t_text = str(t.text).replace('\n',' ')
+        w.write(f'{t.id},{t_text}\n')
 
 
 #response = client.get_users_tweets(279390084)
 
-#for i in response.data:
+#for i in tweets:
     #print(i.id)
-    #print(i.text)
+    #print(str(i.text).replace('\n', ' '))

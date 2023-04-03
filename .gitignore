@@ -2,3 +2,4 @@
 /alienvault/config.ini
 /twitter/twitter.ini
 alienvault/.DS_Store
+twitter/tweet_bot.py
