@@ -3,4 +3,4 @@
 /twitter/twitter.ini
 /alienvault/.DS_Store
 /pastebin/logs/pastepwn.log
-/alienvault/__pycache__
+alienvault/__pycache__
