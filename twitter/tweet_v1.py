@@ -30,15 +30,15 @@ auth = tweepy.OAuth1UserHandler(
 
 api = tweepy.API(auth, wait_on_rate_limit=True)
 
-print(json.dumps(api.get_status('1643078290645581824')._json, indent=4))
+print(json.dumps(api.get_status("1643078290645581824")._json, indent=4))
 
 # This will search for Tweets with the query "Twitter", returning up to the
 # maximum of 100 Tweets per request to the Twitter API
 
 # Once the rate limit is reached, it will automatically wait / sleep before
 # continuing
-#with open('ai4cyber_anonymous_tweets.csv', 'w', encoding='utf-8') as w:
-    #w.write('tweet_id,tweet\n')
-    #for tweet in tweepy.Cursor(api.search_tweets, "#Anonymous", count=100).items():
-        #t_text = str(tweet.text).replace('\n',' ')
-        #w.write(f'{tweet.id},{t_text}\n')
+# with open('ai4cyber_anonymous_tweets.csv', 'w', encoding='utf-8') as w:
+# w.write('tweet_id,tweet\n')
+# for tweet in tweepy.Cursor(api.search_tweets, "#Anonymous", count=100).items():
+# t_text = str(tweet.text).replace('\n',' ')
+# w.write(f'{tweet.id},{t_text}\n')

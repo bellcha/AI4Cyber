@@ -9,7 +9,8 @@ from pathlib import Path
 config = configparser.ConfigParser()
 config.read(Path(Path(__file__).parent).joinpath("twitter.ini"))
 
-table_name = config.read(Path(Path(__file__).parent).joinpath('twitter.ini'))
+table_name = config.read(Path(Path(__file__).parent).joinpath("twitter.ini"))
+
 
 class Base(DeclarativeBase):
     pass

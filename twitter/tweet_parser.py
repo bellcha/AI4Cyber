@@ -27,7 +27,7 @@ def emoji_converter(tweet_text: str):
 
     stripped_tweet = replace_new_line_with_space(tweet_text)
 
-    return re.sub(r'[^A-Za-z0-9 ]+', '', demoji.replace_with_desc(stripped_tweet))
+    return re.sub(r"[^A-Za-z0-9 ]+", "", demoji.replace_with_desc(stripped_tweet))
 
 
 def replace_new_line_with_space(raw_tweet_text: str):
@@ -45,14 +45,14 @@ def get_tweet_data(api: tweepy.API, tweet_id: str):
 
     except tweepy.NotFound as err:
         print(err)
-    
+
     except tweepy.Forbidden as err:
         print(err)
 
 
 def main():
 
-    file = 'ai4cyber_tweets.csv'
+    file = "ai4cyber_tweets.csv"
 
     engine = create_engine(f"mysql+pymysql://{user}:{passwd}@{host}/{database}")
 
@@ -68,16 +68,15 @@ def main():
 
         tweet_ids = [l.split(",")[0] for l in lines]
 
-    #tweet_data = []
-    #tweet_data = [
-    
+    # tweet_data = []
+    # tweet_data = [
 
-    #with open('converted_data.txt', 'a') as d:
-        
-        #for tweet_id in tweet_ids:
-            #d = get_tweet_data(api, tweet_id)
-            #tweet_data.append(d)
-            #print(d.dict())
+    # with open('converted_data.txt', 'a') as d:
+
+    # for tweet_id in tweet_ids:
+    # d = get_tweet_data(api, tweet_id)
+    # tweet_data.append(d)
+    # print(d.dict())
 
     with Session(engine) as session:
 
@@ -92,11 +91,11 @@ def main():
                     date_created=tweet.created_at,
                     user_id=tweet.user.id_str,
                     screen_name=tweet.user.screen_name,
-                    user_name=emoji_converter(tweet.user.name)[:249]
+                    user_name=emoji_converter(tweet.user.name)[:249],
                 )
                 session.add(post)
                 session.commit()
-                print(f'Record id {post.tweet_id} Inserted')
+                print(f"Record id {post.tweet_id} Inserted")
             except Exception as err:
                 print(err)
                 session.rollback()
