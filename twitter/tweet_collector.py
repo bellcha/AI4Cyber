@@ -19,11 +19,15 @@ engine = create_engine(f'mysql+pymysql://{user}:{passwd}@{host}/{database}')
 class Base(DeclarativeBase):
     pass
 
-class Tweet(Base):
+class TweetSqlModel(Base):
     __tablename__ = "twitter"
 
-    id: Mapped[int] = mapped_column(Integer(),primary_key=True)
-    tweet: Mapped[str] = mapped_column(String(250))
+    tweet_id: Mapped[int] = mapped_column(String(250),primary_key=True)
+    tweet_text: Mapped[str] = mapped_column(String(250))
+    date_created: Mapped[int] = mapped_column(String(250),primary_key=True)
+    user_id: Mapped[str] = mapped_column(String(250))
+    screen_name: Mapped[int] = mapped_column(String(250),primary_key=True)
+    user_name: Mapped[str] = mapped_column(String(250))
 
 bearer_token = config["TWITTER"]["BEARER_TOKEN"]
 
@@ -49,7 +53,7 @@ while next_token != None:
 
 
             try:
-                post = Tweet(id=int(tweet.id), tweet = t_text.encode('utf-8'))
+                post = TweetSqlModel(id=int(tweet.id), tweet = t_text.encode('utf-8'))
                 session.add(post)
                 session.commit()
             except Exception as err:

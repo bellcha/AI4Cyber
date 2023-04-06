@@ -4,6 +4,11 @@
 /alienvault/.DS_Store
 /pastebin/logs/pastepwn.log
 /alienvault/__pycache__
+twitter/__pycache__
+
+*.csv
+
+/twitter/*.csv
 
 # Compiled source #
 ###################
@@ -43,3 +48,4 @@
 ehthumbs.db
 Thumbs.db_
 twitter/sql.ini
+
