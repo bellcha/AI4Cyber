@@ -14,21 +14,21 @@ otx = OTXv2(api_key)
 
 mtime = (datetime.now() - timedelta(days=30)).isoformat()
 
-pulses = otx.search_pulses('BlackCat Ransomware')
+#pulses = otx.search_pulses('Ransomware')
 
-#pulses = otx.get_pulse_details('554a4723b45ff50cc4d77959')
+pulses = otx.get_pulse_details('554a4723b45ff50cc4d77959')
 
 print(pulses)
 
-#print(json.dumps(pulses, indent=4))
+print(json.dumps(pulses, indent=4))
 
 ##events = otx.getevents_since(mtime)
 
-df = pd.DataFrame(pulses['results'])
+#df = pd.DataFrame(pulses['results'])
 
 #file_name = pulses['id']
 
-df.to_csv(f'alienvault_blackcat_ransomware.csv', index=False)
+#df.to_csv(f'alienvault_ransomware.csv', index=False)
 
 #print(df)
 
