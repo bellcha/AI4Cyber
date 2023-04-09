@@ -52,7 +52,7 @@ def get_tweet_data(api: tweepy.API, tweet_id: str):
 
 def main():
 
-    file = "ai4cyber_tweets.csv"
+    file = "ai4cyber_alphv2_tweets.csv"
 
     engine = create_engine(f"mysql+pymysql://{user}:{passwd}@{host}/{database}")
 
@@ -67,6 +67,8 @@ def main():
         lines = f.read().splitlines()
 
         tweet_ids = [l.split(",")[0] for l in lines]
+
+    print(tweet_ids)
 
     # tweet_data = []
     # tweet_data = [
@@ -102,5 +104,4 @@ def main():
 
 
 if __name__ == "__main__":
-
     main()
