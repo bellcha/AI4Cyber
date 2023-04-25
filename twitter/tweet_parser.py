@@ -52,7 +52,7 @@ def get_tweet_data(api: tweepy.API, tweet_id: str):
 
 def main():
 
-    file = "ai4cyber_alphv2_tweets.csv"
+    file = "ai4cyber_zeroday_tweets.csv"
 
     engine = create_engine(f"mysql+pymysql://{user}:{passwd}@{host}/{database}")
 

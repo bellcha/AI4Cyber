@@ -12,6 +12,8 @@ api_key = config["API"]["KEY"]
 
 otx = OTXv2(api_key)
 
+
+
 mtime = (datetime.now() - timedelta(days=30)).isoformat()
 
 pulses = otx.search_pulses('ransomware', max_results=500)
