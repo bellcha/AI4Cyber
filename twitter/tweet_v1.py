@@ -37,8 +37,8 @@ api = tweepy.API(auth, wait_on_rate_limit=True)
 
 # Once the rate limit is reached, it will automatically wait / sleep before
 # continuing
-with open("ai4cyber_SIVSA_tweets.csv", "w", encoding="utf-8") as w:
+with open("cobaltstrike.csv", "w", encoding="utf-8") as w:
     w.write("tweet_id,tweet\n")
-    for tweet in tweepy.Cursor(api.search_tweets, "#SIVSA").items():
+    for tweet in tweepy.Cursor(api.search_tweets, "cobaltstrike").items():
         t_text = str(tweet.text).replace("\n", " ")
         w.write(f"{tweet.id},{t_text}\n")

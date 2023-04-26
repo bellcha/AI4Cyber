@@ -47,7 +47,7 @@ def get_ipv4_details():
 
 
 def get_details():
-    df = pd.read_csv(Path(Path(__file__).parent).joinpath('alienvault_ransomware2.csv'))
+    df = pd.read_csv(Path(Path(__file__).parent).joinpath('alienvault_cobaltstrike.csv'))
 
     ids = [id["id"] for value, id in df.iterrows()]
 
@@ -68,7 +68,7 @@ def get_details():
             indicator_df= pd.concat([indicator_df, pd.DataFrame(pd.json_normalize(i))], ignore_index=True)
         #print(pulse_deets.head())
 
-    indicator_df.to_csv('indicators.csv', index=False)
+    indicator_df.to_csv('cobaltstrike_indicators.csv', index=False)
 
     #pulse_deets.to_csv('pulse_ransomeware_details.csv', index=False)
 
@@ -99,4 +99,4 @@ def get_details():
 
 #print(pd.json_normalize(otx.get_indicator_details_full(IndicatorTypes.IPv4,'192.185.166.27')).keys())
 
-get_ipv4_details()
+get_details()

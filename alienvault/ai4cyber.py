@@ -12,9 +12,11 @@ api_key = config["API"]["KEY"]
 
 otx = OTXv2(api_key)
 
+
+
 mtime = (datetime.now() - timedelta(days=30)).isoformat()
 
-pulses = otx.search_pulses('ransomware', max_results=500)
+pulses = otx.search_pulses('cobaltstrike', max_results=500)
 
 #pulses = otx.get_pulse_details('554a4723b45ff50cc4d77959')
 
@@ -28,7 +30,7 @@ df = pd.DataFrame(pulses['results'])
 
 #file_name = pulses['id']
 
-df.to_csv(f'{Path(Path(__file__).parent).joinpath("alienvault_ransomware2.csv")}', index=False)
+df.to_csv(f'{Path(Path(__file__).parent).joinpath("alienvault_cobaltstrike.csv")}', index=False)
 
 #print(df)
 
