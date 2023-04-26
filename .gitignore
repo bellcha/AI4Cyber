@@ -7,9 +7,6 @@
 twitter/__pycache__
 
 *.csv
-*.xml
-*.iml
-rockyou.txt
 
 /twitter/*.csv
 
