@@ -1,7 +1,7 @@
 import tweepy
 import configparser
 from pathlib import Path
-import json
+import csv
 
 config = configparser.ConfigParser()
 config.read(Path(Path(__file__).parent).joinpath("twitter.ini"))
@@ -37,8 +37,11 @@ api = tweepy.API(auth, wait_on_rate_limit=True)
 
 # Once the rate limit is reached, it will automatically wait / sleep before
 # continuing
-with open("cobaltstrike.csv", "w", encoding="utf-8") as w:
-    w.write("tweet_id,tweet\n")
-    for tweet in tweepy.Cursor(api.search_tweets, "cobaltstrike").items():
+with open("zero_day_042623_2.csv", "w", encoding="utf-8") as w:
+    csv_writer = csv.writer(w,delimiter=',')
+    header = ['tweet_id','tweet']
+    csv_writer.writerow(header)
+    for tweet in tweepy.Cursor(api.search_tweets, "zeroday").items():
         t_text = str(tweet.text).replace("\n", " ")
-        w.write(f"{tweet.id},{t_text}\n")
+        row = [tweet.id,t_text]
+        csv_writer.writerow(row)
